@@ -1,10 +1,7 @@
 <?php
 
 class Form{
-    private $data;
     public $toLine = 'p';
-
-    //ucfirst()
 
     public function startForm($method,$action){
         return '<form method="$_'.$method.'" action="'.$action.'">';
@@ -12,10 +9,6 @@ class Form{
 
     public function endForm(){
         return '</form>';
-    }
-
-    public function __constructor($data = array()){
-        $this->data = $data;
     }
 
     private function toLine($html){
