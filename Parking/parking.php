@@ -20,7 +20,7 @@ class voiture{
             case "DE": $this->origine = "Allemagne"; break;
             case "FR": $this->origine = "France"; break;
             case "IT": $this->origine = "Italie"; break;
-            default : "Inconnue";
+            default : $this->origine = "Inconnue";
         }
     }
 
